@@ -1,0 +1,41 @@
+<head>
+  <title>WEB</title>
+  <meta charset="utf-8" />
+  <style>
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    #active {
+      color: Red;
+    }
+
+    .saw {
+      color: gray;
+    }
+
+    h1 {
+      font-size: 45px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <a href="index.html">WEB</a>
+  </h1>
+  <ol>
+    <li>
+      <a href="1.html" class="saw">HTML</a>
+    </li>
+    <li>
+      <a href="2.html" class="saw" id="active">CSS</a>
+    </li>
+    <!----id 선택자는 한번만 나와야한다-->
+    <!----포괄적인것보다 구체적인것이 우선순위가 높다.
+    뒤에 나오는것이 우선순위가 높다.-->
+    <li>
+      <a href="3.html">JavaScript</a>
+    </li>
+  </ol>
+</body>
