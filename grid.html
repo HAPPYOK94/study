@@ -1,62 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title></title>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        width: 100vh;
-        height: 100vh;
-        margin: 0;
-      }
-      .item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #181818;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      .container {
+      #grid {
+        border: 5px solid pink;
         display: grid;
-        grid-template-columns: repeat(5, 100px);
-        grid-template-rows: 100px 200px repeat();
+        grid-template-columns: 150px 1fr;
       }
-
-      .color1 {
-        background-color: aliceblue;
-      }
-      .color2 {
-        background-color: rgb(65, 102, 135);
-      }
-      .color3 {
-        background-color: rgb(84, 56, 195);
-      }
-      .color4 {
-        background-color: rgb(120, 164, 19);
-      }
-      .color5 {
-        background-color: rgb(108, 22, 83);
+      div {
+        border: 5px solid gray;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="item color1">Item1</div>
-      <div class="item color2">Item2</div>
-      <div class="item color3">Item3</div>
-      <div class="item color4">Item4</div>
-      <div class="item color5">Item5</div>
-      <div class="item color1">Item6</div>
-      <div class="item color2">Item7</div>
-      <div class="item color3">Item8</div>
-      <div class="item color4">Item9</div>
-      <div class="item color5">Item10</div>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </div>
     </div>
   </body>
 </html>
