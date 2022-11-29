@@ -17,12 +17,11 @@
         }
         document.write("<li>1</li>");
         two();
-        document.write("<li>2-2</li>");
-        two();
         document.write("<li>3</li>");
+        two();
       </script>
     </ul>
-    <h2>Parameter & Argument</h2>
+    <h2>parameter & Argument</h2>
     <script>
       function onePlusOne() {
         document.write(1 + 1 + "<br>");
@@ -31,10 +30,22 @@
       function sum(left, right) {
         document.write(left + right + "<br>");
       }
-      sum(2, 3); // 5
+      function sumColorRed(left, right) {
+        document.write('<div style="color:red">' + left + right + "</div>");
+      }
+      sum(2, 3);
+      sumColorRed(2, 3);
       sum(3, 4);
     </script>
+
     <h2>Return</h2>
-    재채기가 너무 나온다 ㅇ 흐르흑흐그흐긓ㄱ 콧물아 멈춰라
+    <script>
+      function sum2(left, right) {
+        return left + right;
+      }
+      document.write(sum2(2, 3) + "<br>");
+      document.write('<div style="color:red">' + sum2(2, 3) + "</div>");
+      document.write('<div style="font-size:3rem">' + sum2(2, 3) + "</div>");
+    </script>
   </body>
 </html>
